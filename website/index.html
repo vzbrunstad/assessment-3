@@ -1,1 +1,259 @@
-<!--Hello World-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css"> <!-- A link to our new style sheet  -->
+  <title>Code Platoon!</title>
+</head>
+<body>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item active">
+          <button class="tablink" onclick="openPage('E Commerce Website', this, 'purple')"id="defaultOpen">E Comerce Web Site</button>
+          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        </li>
+        <li class="nav-item active">
+          <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        </li>
+        <li class="nav-item">
+          <button class="tablink" onclick="openPage('Kitchen', this, 'green')" >Kitchen</button>
+          <!-- <a class="nav-link" href="#">Kitchen</a> -->
+        </li>
+        <li class="nav-item">
+          <button class="tablink" onclick="openPage('Bath and Bedroom', this, 'blue')">Bath and Bedroom</button>
+          <!-- <a class="nav-link" href="#">Bed & Bath</a> -->
+        </li>
+        <li class="nav-item">
+          <button class="tablink" onclick="openPage('Office', this, 'orange')">Office</button>
+          <!-- <a class="nav-link" href="#">Office</a> -->
+        </li>
+      </ul>
+      <a class="tablink" onclick="openPage('Shopping Cart', this, 'orange')">
+        Shopping Cart(click here)
+      </a>
+    </div>
+  </nav>
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+  <div id="E Commerce Website" class="tabcontent">
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Home.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Home decor</h5>
+            <p class="card-text">Find all of your home decor needs here. SALE ON DOUGHNUT MAKERS.<span style="color:green"> This is a bootstrap button.</span>
+              </p>
+            <Button class="tablink" onclick="openPage('Home', this, 'orange')">Home Department</Button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Kitchen.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Kitchen</h5>
+            <p class="card-text">For all of your cooking needs.</p>
+            <Button class="tablink" onclick="openPage('Kitchen', this, 'orange')">Kitchen Department</Button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Bed and Bath.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Bed and Bath</h5>
+            <p class="card-text">All of you bedroom and bathroom needs.</p>
+            <Button class="tablink" onclick="openPage('Bed and Bath', this, 'orange')">Bed and Bath</Button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Office.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Office</h5>
+            <p class="card-text">Office supplies and furnature.</p>
+            <Button class="tablink" onclick="openPage('Office', this, 'orange')">Office</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------- -->
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Home_chair.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" id="cartItem-Home_Chair">Home Chair</h5>
+            <p class="card-text">Buy your home decor here.</p>
+            <a id = 'Home Chair' href="#" class="btn btn-primary" onclick="addItemCart('Home Chair', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Home_fan.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fan</h5>
+            <p class="card-text">Very Blowy.</p>
+            <a href="#" class="btn btn-primary"onclick="addItemCart('Fan', 30.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Home_lamp.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Lamp</h5>
+            <p class="card-text">Let there be light.</p>
+            <a href="#" class="btn btn-primary"onclick="addItemCart('Lamp', 40.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------- -->
+  <div id="Kitchen" class="tabcontent">
+    <h3>Kitchen</h3>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Kitchen_coffee_maker.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Coffee Maker</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Coffee Maker', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Kitchen_doughnut_maker.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Doughnut Maker</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Doughnut Maker', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Kitchen_Grill.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Kitchen Grill</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Kitchen Grill', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------- -->
+  <div id="Bath and Bedroom" class="tabcontent">
+    <h3>Bath and Bedroom</h3>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Bath and Bedroom_pillow.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pillow</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Pillow', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Bath and Bedroom_Sheets.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Sheets</h5>
+            <p class="card-text">Soft 1000 thread count sheets.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Sheets', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Bath and Bedroom_toothbrush.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Toothbrush</h5>
+            <p class="card-text">Toothbrush, so fresh and so clean.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Toothbrush', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------- -->
+  <div id="Office" class="tabcontent">
+    <h3>Office</h3>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Office_chair.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Office Chair</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Office Chair', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Office_pen_holder.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pen Holder</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Pen Holder', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images\Office_file_holder.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">File Holder</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('File Holder', 20.00);">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -------------------------------------------------------------- -->
+  <div id="Shopping Cart" class="tabcontent">
+    <h3>Shopping Cart(click here)</h3>
+    <h5><pre><u>Quantity      Item      Cost</pre></u></h1>
+
+    <div>
+      <ul id='to-do-list'><pre>
+        default item.
+      </pre></ul>
+    </div>
+    
+    <h5 id = 'total'></h1>
+    
+
+  </div>
+
+
+</body>
+</html>
