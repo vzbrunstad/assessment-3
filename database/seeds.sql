@@ -3,11 +3,13 @@ INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (1, '123 North S
 INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (2, '456 South St', 'Spooner', 'Wisconsin', '49028');
 INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (3, '789 East St', 'Mahtomedi', 'Minnesota', '49028');
 INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (4, '159 West St', 'Chicago', 'Illinois', '49028');
+INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (5, '259 Maple St', 'White Bear', 'Minnesota', '55110');
 
 INSERT INTO category (id, category) VALUES (1, 'Home');
 INSERT INTO category (id, category) VALUES (2, 'Kitchen');
 INSERT INTO category (id, category) VALUES (3, 'Bath and Bedroom');
 INSERT INTO category (id, category) VALUES (4, 'Office');
+INSERT INTO category (id, category) VALUES (5, 'Electronics');
 
 INSERT INTO product (id, product, category_id, cost) VALUES (1, 'pillow', 3, 20.00);
 INSERT INTO product (id, product, category_id, cost) VALUES (2, 'sheets', 3, 34.00);
@@ -26,6 +28,7 @@ INSERT INTO customer (id, first_name, last_name, address_id, phone, email) VALUE
 INSERT INTO customer (id, first_name, last_name, address_id, phone, email) VALUES (2, 'Bugs', 'Bunny', 2, '6513530000', 'vzbrunstad@gmail.com');
 INSERT INTO customer (id, first_name, last_name, address_id, phone, email) VALUES (3, 'Tom', 'Johnson', 3, '6513530000', 'vzbrunstad@aol.com');
 INSERT INTO customer (id, first_name, last_name, address_id, phone, email) VALUES (4, 'Donna', 'Zappa', 4, '6513530000', 'vzbrunstad@gmail.com');
+INSERT INTO customer (id, first_name, last_name, address_id, phone, email) VALUES (5, 'Jack', 'Olson', 1, '6513530000', 'vzbrunstad@gmail.com');
 
 INSERT INTO orders (id, category_id, product_id, customer_id, dtg) VALUES (1, 1, 4, 1, '2020-01-01');
 INSERT INTO orders (id, category_id, product_id, customer_id, dtg) VALUES (2, 2, 8, 2, '1985-02-17');

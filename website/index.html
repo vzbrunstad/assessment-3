@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------Nav Bar (Bootstrap)------------------------------------ -->
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,31 +22,26 @@
         
         <li class="nav-item active">
           <button class="tablink" onclick="openPage('E Commerce Website', this, 'purple')"id="defaultOpen">E Comerce Web Site</button>
-          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
         </li>
         <li class="nav-item active">
           <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
         </li>
         <li class="nav-item">
           <button class="tablink" onclick="openPage('Kitchen', this, 'green')" >Kitchen</button>
-          <!-- <a class="nav-link" href="#">Kitchen</a> -->
         </li>
         <li class="nav-item">
           <button class="tablink" onclick="openPage('Bath and Bedroom', this, 'blue')">Bath and Bedroom</button>
-          <!-- <a class="nav-link" href="#">Bed & Bath</a> -->
         </li>
         <li class="nav-item">
           <button class="tablink" onclick="openPage('Office', this, 'orange')">Office</button>
-          <!-- <a class="nav-link" href="#">Office</a> -->
         </li>
       </ul>
-      <a class="tablink" onclick="openPage('Shopping Cart', this, 'orange')">
+      <a id='Shopping_Cart_Link' class="tablink" onclick="openPage('Shopping_Cart', this, 'orange')">
         Shopping Cart(click here)
       </a>
     </div>
   </nav>
-<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- -------------------------Main Loading Page---------------------------------------------------- -->
 
   <div id="E Commerce Website" class="tabcontent">
 
@@ -78,7 +73,7 @@
           <div class="card-body">
             <h5 class="card-title">Bed and Bath</h5>
             <p class="card-text">All of you bedroom and bathroom needs.</p>
-            <Button class="tablink" onclick="openPage('Bed and Bath', this, 'orange')">Bed and Bath</Button>
+            <Button class="tablink" onclick="openPage('Bath and Bedroom', this, 'orange')">Bed and Bath</Button>
           </div>
         </div>
       </div>
@@ -94,7 +89,7 @@
       </div>
     </div>
   </div>
-<!-- ------------------------------------------- -->
+<!-- -----------------Home Tab-------------------------- -->
   <div id="Home" class="tabcontent">
     <h3>Home</h3>
     <div class="row">
@@ -104,7 +99,7 @@
           <div class="card-body">
             <h5 class="card-title" id="cartItem-Home_Chair">Home Chair</h5>
             <p class="card-text">Buy your home decor here.</p>
-            <a id = 'Home Chair' href="#" class="btn btn-primary" onclick="addItemCart('Home Chair', 20.00);">Add to Cart</a>
+            <a id = 'Home Chair' href="#" class="btn btn-primary" onclick="addItemCart('Home Chair', 98.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -114,7 +109,7 @@
           <div class="card-body">
             <h5 class="card-title">Fan</h5>
             <p class="card-text">Very Blowy.</p>
-            <a href="#" class="btn btn-primary"onclick="addItemCart('Fan', 30.00);">Add to Cart</a>
+            <a href="#" class="btn btn-primary"onclick="addItemCart('Fan', 65.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -124,13 +119,13 @@
           <div class="card-body">
             <h5 class="card-title">Lamp</h5>
             <p class="card-text">Let there be light.</p>
-            <a href="#" class="btn btn-primary"onclick="addItemCart('Lamp', 40.00);">Add to Cart</a>
+            <a href="#" class="btn btn-primary"onclick="addItemCart('Lamp', 22.00);">Add to Cart</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- ------------------------------------------- -->
+<!-- -------------------Kitchen Tab------------------------ -->
   <div id="Kitchen" class="tabcontent">
     <h3>Kitchen</h3>
     <div class="row">
@@ -139,8 +134,8 @@
           <img class="card-img-top" src="images\Kitchen_coffee_maker.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Coffee Maker</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Coffee Maker', 20.00);">Add to Cart</a>
+            <p class="card-text">Wake up and brew some Folgers in your cup.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Coffee Maker', 21.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -149,8 +144,8 @@
           <img class="card-img-top" src="images\Kitchen_doughnut_maker.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Doughnut Maker</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Doughnut Maker', 20.00);">Add to Cart</a>
+            <p class="card-text">The Ankur special, only 3 dollars.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Doughnut Maker', 3.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -159,14 +154,14 @@
           <img class="card-img-top" src="images\Kitchen_Grill.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Kitchen Grill</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Kitchen Grill', 20.00);">Add to Cart</a>
+            <p class="card-text">George Forman knock of.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Kitchen Grill', 107.00);">Add to Cart</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- ------------------------------------------- -->
+<!-- ---------------------Bath and Bedroom Tab---------------------- -->
   <div id="Bath and Bedroom" class="tabcontent">
     <h3>Bath and Bedroom</h3>
     <div class="row">
@@ -175,7 +170,7 @@
           <img class="card-img-top" src="images\Bath and Bedroom_pillow.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Pillow</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Like sleeping on a baby sheep.</p>
             <a href="#" class="btn btn-primary" onclick="addItemCart('Pillow', 20.00);">Add to Cart</a>
           </div>
         </div>
@@ -186,7 +181,7 @@
           <div class="card-body">
             <h5 class="card-title">Sheets</h5>
             <p class="card-text">Soft 1000 thread count sheets.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Sheets', 20.00);">Add to Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Sheets', 34.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -196,13 +191,13 @@
           <div class="card-body">
             <h5 class="card-title">Toothbrush</h5>
             <p class="card-text">Toothbrush, so fresh and so clean.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Toothbrush', 20.00);">Add to Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Toothbrush', 67.00);">Add to Cart</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- ------------------------------------------- -->
+<!-- --------------------Office Tab----------------------- -->
   <div id="Office" class="tabcontent">
     <h3>Office</h3>
     <div class="row">
@@ -211,8 +206,8 @@
           <img class="card-img-top" src="images\Office_chair.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Office Chair</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Office Chair', 20.00);">Add to Cart</a>
+            <p class="card-text">Super Comfortable.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Office Chair', 176.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -221,8 +216,8 @@
           <img class="card-img-top" src="images\Office_pen_holder.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Pen Holder</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('Pen Holder', 20.00);">Add to Cart</a>
+            <p class="card-text">For that "prickly coworker".</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('Pen Holder', 10.00);">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -231,16 +226,16 @@
           <img class="card-img-top" src="images\Office_file_holder.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">File Holder</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" onclick="addItemCart('File Holder', 20.00);">Add to Cart</a>
+            <p class="card-text">Wooden File holder... Fancy.</p>
+            <a href="#" class="btn btn-primary" onclick="addItemCart('File Holder', 5.00);">Add to Cart</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- -------------------------------------------------------------- -->
-  <div id="Shopping Cart" class="tabcontent">
-    <h3>Shopping Cart(click here)</h3>
+<!-- -------------------------SHOPPING CART TAB------------------------------------- -->
+  <div id="Shopping_Cart" class="tabcontent">
+    <h3>Shopping Cart</h3>
     <h5><pre><u>Quantity      Item      Cost</pre></u></h1>
 
     <div>
